@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <h1>Registrate</h1>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="Nombre">Nombre: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="primer-apellido">Primer apellido: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="segundo-apellido">Segundo apellido: <input id="last-name" name="last-name" type="text" /></label>
+        <label for="email">Email: <input id="email" name="email" type="text" pattern="^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$" required /></label>
+        <label for="password">Contraseña: <input id="password" name="password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+        <label for="con-password">Confirma la contraseña: <input id="con-password" name="con-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> Aceptar la política de privacidad
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
