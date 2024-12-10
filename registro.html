@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <h1>Registrate</h1>
+    <form method="post" action=''>
+      <fieldset>
+        <label for="nombre">Nombre: (obligatorio)<input id="nombre" name="nombre" type="text" required /></label>
+        <label for="apellido1">Primer apellido: (obligatorio)<input id="apellido1" name="apellido1" type="text" required /></label>
+        <label for="apellido2">Segundo apellido: <input id="apellido2" name="apellido2" type="text" /></label>
+        <label for="email">Email: (obligatorio)<input id="email" name="email" type="text"  required /></label>
+        <label for="password">Contraseña: (obligatorio)<input id="password" name="password" type="password"  required /></label>
+        <label for="password2">Confirma la contraseña: (obligatorio)<input id="password2" name="password2" type="password"  required /></label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> Aceptar la política de privacidad
+      </label>
+      <input type="submit" value="Registrarse" id="btnRegistrar" />
+    </form>
+    <script src="js\formulario.js"></script>
+  </body>
+</html>
