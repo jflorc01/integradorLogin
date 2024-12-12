@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
-    <h1>login</h1>
-    <form method="post" action=''>
+    <h1>Login</h1>
+    <form id="login" method="post" action='#'>
       <fieldset>
-        <label for="email">Email: <input id="email" name="email" type="text"  required /></label>
-        <label for="password">Contraseña: <input id="password" name="password" type="password"  required /></label>
+        <label for="email">Email: <input id="email" name="email" type="text" required /></label>
+        <label for="password">Contraseña: <input id="password" name="password" type="password" required /></label>
       </fieldset>
-      <input type="submit" value="Registrarse" id="btnRegistrar" />
+      <input type="submit" value="Iniciar sesión" id="btnLogin" />
     </form>
+    <p id="lineaRegistro">¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a>.</p>
+    <script src="js/login.js"></script>
   </body>
 </html>
