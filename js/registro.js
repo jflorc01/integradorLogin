@@ -14,6 +14,8 @@ document.getElementById('btnRegistrar').addEventListener('click', function() {
     const password2 = document.getElementById('password2').value.trim();
     const patronPass = /(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}/;
 
+    const privacidad = document.getElementById('terms-and-conditions').checked;
+
     let esValido = true;
 
     // Validamos el nombre
